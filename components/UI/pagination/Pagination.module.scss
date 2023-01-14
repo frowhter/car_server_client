@@ -1,0 +1,27 @@
+.page__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 700px){
+    .page__wrapper{
+        display: none;
+    }
+}
+
+.page {
+    padding: 10px;
+    border: 1px solid teal;
+    cursor: pointer;
+}
+.page:hover{
+    background: lightgray;
+}
+
+.page__current {
+    border: 2px solid orange;
+    font-weight: bold;
+    padding: 10px;
+
+}
+

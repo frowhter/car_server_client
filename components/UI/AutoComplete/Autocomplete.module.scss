@@ -1,0 +1,79 @@
+
+
+.inputContainer{
+  position: relative;
+  .inputSelectBody{
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 20%);
+    border-radius: 4px;
+    transition: 0.2s;
+    z-index: 3000;
+    max-height: 140px;
+    overflow-y: auto;
+    .item{
+      padding: 7px 16px;
+      display: flex;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      color: #000;
+    }
+    .item:hover{
+      background: #b3bee1;
+    }
+    .active{
+      background: #b3bee1;
+    }
+
+  }
+}
+
+
+.inputSelectBody::-webkit-scrollbar {
+  width: 5px;
+}
+.inputSelectBody::-webkit-scrollbar-track {
+  background: #F5F5F5;
+}
+.inputSelectBody::-webkit-scrollbar-thumb {
+  background-color: #212529;
+  border-radius: 20px;
+}
+
+
+.ACTIVE{
+  visibility: visible;
+  opacity: 1;
+}
+.disable{
+  opacity: 0;
+  visibility: hidden;
+}
+.details {
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+
+  .check {
+    display: block;
+    margin-right: 16px;
+  }
+}
+
+
+.selection_items_item{
+  display: flex;
+  align-items: center;
+  position: relative;
+  .selection_arrow{
+    position: absolute;
+    right: 16px;
+    transition: 0.2s;
+    display: flex;
+  }
+}
+

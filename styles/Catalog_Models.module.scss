@@ -1,0 +1,41 @@
+.catalog_step_two {
+  padding-left: 42px;
+  position: relative;
+  font-size: 14px;
+  margin-right: 40px;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.catalog_step_two::before {
+  position: absolute;
+  content: "2";
+  left: 0;
+  color: #fff;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #2e71f0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.brandBlock{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #1d2024;
+  padding: 13px;
+  background-color: #fff;
+  box-shadow: 3px 5px 17px rgb(0 0 0 / 13%);
+  border-radius: 4px;
+  margin-right: 10px;
+  white-space: nowrap;
+}

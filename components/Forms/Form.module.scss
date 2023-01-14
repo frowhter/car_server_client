@@ -1,0 +1,111 @@
+
+.selection{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.formSelectBody{
+  width: 100%;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+  max-width: 552px;
+}
+
+.selection_items_model{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+
+
+
+.selection_items_item{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.selection_arrow{
+  position: absolute;
+  right: 16px;
+  transition: 0.2s;
+  display: flex;
+}
+
+//form for call
+
+.formCall {
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 503px;
+  margin: 0 auto;
+}
+
+
+.private_policy, .details{
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #000;
+  margin-bottom: 24px;
+  margin-right: auto;
+  .check{
+    display: block;
+    margin-right: 16px;
+  }
+  .privacy_policy_btn, .rules_btn{
+    color: #0d6efd;
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 950px){
+.selectionImage{
+  display: none;
+}
+}
+
+.inputContainer{
+  position: relative;
+  .inputSelectBody{
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 20%);
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+    z-index: 3000;
+    max-height: 140px;
+    overflow-y: auto;
+
+  }
+}
+
+.ACTIVE{
+  .inputSelectBody{
+    visibility: visible;
+    opacity: 1;
+  }
+
+}

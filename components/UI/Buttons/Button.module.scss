@@ -1,0 +1,50 @@
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #2E71F0;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 183%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFF;
+  padding: 14px 27px;
+  transition: 0.2s;
+  background: none;
+}
+.btn:disabled, .btn:disabled:hover{
+  opacity: 0.3;
+  background-color: #2E71F0;
+  color: white;
+}
+
+.btn:hover{
+  background-color: #2E71F0;
+}
+
+.filled{
+  background-color: #2E71F0;
+}
+
+.blank_text_blue{
+  color: #2E71F0;
+}
+.blank_text_blue:hover{
+  color: white;
+}
+
+.padding{
+  padding: 5px 10px!important;
+}
+
+.filled:hover {
+  background: none;
+}
+.filled:hover{
+  color: #2E71F0;;
+  background: white;
+}

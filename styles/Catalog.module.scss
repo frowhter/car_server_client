@@ -1,0 +1,131 @@
+.catalog_container{
+  background-color: #091D3B;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  max-width: none;
+}
+
+
+@media screen and (min-width: 850px){
+  .catalog_container::after {
+    content: "";
+    width: 578px;
+    height: 1800px;
+    position: absolute;
+    top: -779px;
+    right: 0;
+    background-color: #2269EF;
+    transform: rotate(32deg);
+  }
+}
+
+.catalog_wrapper {
+  z-index: 1000;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 4px 34px rgb(0 0 0 / 10%);
+  border-radius: 4px;
+  padding: 38px 70px 32px 70px;
+  min-height: 80vh;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .catalog_wrapper {
+    padding: 32px 24px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .catalog_wrapper {
+    padding: 24px 16px;
+  }
+}
+.catalog_wrapper_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1000px){
+  .catalog_wrapper_header {
+    gap: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.catalog_step {
+  padding-left: 42px;
+  position: relative;
+  font-size: 14px;
+  margin-right: 40px;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.catalog_step::before {
+  position: absolute;
+  content: "1";
+  left: 0;
+  color: #fff;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #2e71f0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog_search {
+  color: black;
+  position: relative;
+  width: 100%;
+   button {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+  }
+}
+
+.catalog_result {
+  column-gap: 60px;
+  max-height: 60vh;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.catalog_result_item{
+  display: flex;
+  height: fit-content;
+  cursor: pointer;
+}
+
+
+.catalog_result::-webkit-scrollbar {
+  width: 5px;
+}
+.catalog_result::-webkit-scrollbar-track {
+  background: #F5F5F5;
+}
+.catalog_result::-webkit-scrollbar-thumb {
+  background-color: #212529;
+  border-radius: 20px;
+}

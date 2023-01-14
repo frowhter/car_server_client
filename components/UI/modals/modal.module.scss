@@ -1,0 +1,45 @@
+
+
+.modal{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  background: rgba(0,0,0, 0.5);
+  padding: 0 15px;
+  z-index: 5000;
+  cursor: pointer;
+}
+
+.modalClose{
+  margin-bottom: 15px;
+  margin-left: auto;
+  background: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  width: fit-content;
+  padding: 25px;
+  background: white;
+  border-radius: 16px;
+  padding: calc(16px + 24 * (100vw - 320px) / 1540) calc(16px + 56 * (100vw - 320px) / 1540);
+  transition: 0.2s;
+  border-radius: 4px;
+  cursor: auto;
+}
+
+.modal.active{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
